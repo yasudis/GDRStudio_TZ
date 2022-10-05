@@ -53,6 +53,9 @@
     <UnityVersion>2021.3.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.mobile.notifications@2.0.2\Runtime\iOS\AuthorizationRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.notifications@2.0.2\Runtime\iOS\iOSNotificationAction.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.notifications@2.0.2\Runtime\iOS\AssemblyInfo.cs" />

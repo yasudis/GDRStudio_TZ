@@ -53,6 +53,10 @@
     <UnityVersion>2021.3.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Script\MoveToPoint.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -640,6 +644,10 @@
       <Project>{E17DE081-1C55-CA9D-D1F2-D4E629A454C9}</Project>
       <Name>Unity.TextMeshPro.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.Player.csproj">
+      <Project>{AEF9FB16-2E13-5A9F-92B4-0A7411358C5F}</Project>
+      <Name>Unity.ProBuilder.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Subsystem.Registration.Player.csproj">
       <Project>{A5541C01-387A-B15C-E434-72D1DA122D23}</Project>
       <Name>Unity.Subsystem.Registration.Player</Name>
@@ -652,13 +660,13 @@
       <Project>{6884A0F9-9EDA-C0F0-941F-D5865E194B2F}</Project>
       <Name>Unity.VisualScripting.Flow.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.Player.csproj">
-      <Project>{3EBB46E2-30D4-3549-F470-F885BADD0AE0}</Project>
-      <Name>Unity.Services.Core.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.Player.csproj">
       <Project>{F2389943-E199-244B-A911-ADD2EA5ECCFC}</Project>
       <Name>Unity.VisualScripting.Core.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Player.csproj">
+      <Project>{3EBB46E2-30D4-3549-F470-F885BADD0AE0}</Project>
+      <Name>Unity.Services.Core.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Analytics.Player.csproj">
       <Project>{9DD4BDF3-682C-E8A4-DCEB-B1F6B6E2F80A}</Project>

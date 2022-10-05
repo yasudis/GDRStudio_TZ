@@ -53,6 +53,9 @@
     <UnityVersion>2021.3.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Editor\UI\PropertyDrawers\DropdownOptionListDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Editor\UI\MenuOptions.cs" />
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Editor\UI\PropertyDrawers\FontDataDrawer.cs" />

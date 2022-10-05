@@ -53,6 +53,9 @@
     <UnityVersion>2021.3.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\Collaborate\Views\IStartView.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\Collaborate\Views\Adapters\IAdapter.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\Collaborate\Components\SearchBar.cs" />
@@ -131,8 +134,8 @@
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\Collaborate\Views\Adapters\ListAdapters\ToggleableChangeListAdapter.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\Collaborate\Common\StringArrayContainer.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\Collaborate\UserInterface\CollaborateWindow.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\Collaborate\Presenters\HistoryPresenter.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\Collaborate\EditorGameService\CloudCollabServiceIdentifier.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\Collaborate\Presenters\HistoryPresenter.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\Collaborate\Models\Providers\Collab.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\Collaborate\Components\TabPageComponent.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\Collaborate\EditorGameService\CloudCollabTopMenu.cs" />
@@ -879,6 +882,10 @@
     <ProjectReference Include="Unity.Services.Core.Editor.csproj">
       <Project>{6D734F63-D3F5-9AF6-BCF9-2E0599424397}</Project>
       <Name>Unity.Services.Core.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Settings.Editor.csproj">
+      <Project>{DF204CC6-37E8-D5F6-CDCA-F4E851BE069D}</Project>
+      <Name>Unity.Settings.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{A6E79342-6449-6C9F-4CBD-70D2BA048D30}</Project>

@@ -53,6 +53,9 @@
     <UnityVersion>2021.3.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\Views\Diff\GetClientDiffInfos.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\UI\Tree\TreeViewItemIds.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\Views\IncomingChanges\Gluon\IncomingChangesTab.cs" />
@@ -64,8 +67,8 @@
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\Views\PendingChanges\PendingMergeLinks\MergeLinkListViewItem.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\UI\DrawTextBlockWithEndLink.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\UI\Tree\TableViewOperations.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\Views\History\HistorySelection.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\Gluon\UpdateReport\UpdateReportListHeaderState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\Views\History\HistorySelection.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\UI\PlasticDialog.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\Inspector\DrawInspectorOperations.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\UI\Tree\TreeHeaderColumns.cs" />
@@ -224,8 +227,8 @@
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\Configuration\ChannelCertificateUiImpl.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\NewIncomingChanges.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\Views\Diff\Dialogs\GetRestorePathDialog.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\MetaPath.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\Views\IncomingChanges\Developer\IncomingChangesTab.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\MetaPath.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\EnumExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\UI\DockEditorWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.18\Editor\PlasticSCM\SwitchModeConfirmationDialog.cs" />
