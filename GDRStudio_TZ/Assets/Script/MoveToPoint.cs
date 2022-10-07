@@ -5,16 +5,19 @@ using UnityEngine;
 
 public class MoveToPoint : MonoBehaviour
 {
-    //Vector3 pos;
+    public LineRenderer line;
     float moveSpeed = 10;
     Vector3[] moveToPoits;
     private int numberOfPoint=0;
     private int numberOfMovetoPoint = 0;
     private int countsOfPoint=100;
+    
 
     void Start()
     {
-        moveToPoits = new Vector3[countsOfPoint];  
+       moveToPoits = new Vector3[countsOfPoint];
+       line.positionCount = 0;
+       line.SetPosition(0, transform.position);
     }
 
     // Update is called once per frame
@@ -27,11 +30,18 @@ public class MoveToPoint : MonoBehaviour
             if (numberOfPoint < countsOfPoint)
             {
                 moveToPoits[numberOfPoint] = pos;
+                line.positionCount++;
+                // line.SetPosition(100-numberOfPoint-1, pos);
+                line.SetPosition(numberOfPoint, moveToPoits[numberOfPoint]);
+               
                 numberOfPoint += 1;
+
+
             }
             else
             {
                 numberOfPoint = 0;
+               // line.positionCount = 0;
             }
 
             //pos = (pos.x, pos.y, 0);
@@ -42,19 +52,26 @@ public class MoveToPoint : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, moveToPoits[numberOfMovetoPoint], moveSpeed * Time.deltaTime);
         if (transform.position== moveToPoits[numberOfMovetoPoint])
             {
+                for (int i = 0; i < numberOfMovetoPoint; i++)
+                {
+                    line.SetPosition(i, transform.position);
+                }
+               
+
                 Array.Clear(moveToPoits, numberOfMovetoPoint, 1);
-               // moveToPoits[numberOfMovetoPoint]=0;
+                // line. = 0;
+                
+             //   Destroy(line.);
+               //line.SetPosition(numberOfMovetoPoint, moveToPoits[numberOfMovetoPoint]);
                 numberOfMovetoPoint += 1;
 
             }
         if (numberOfMovetoPoint>= countsOfPoint)
         {
             numberOfMovetoPoint = 0;
+            
         }
         }
     }
-    private void MoveToPoits(Vector3 pos)
-    {
-
-    }
+    
 }
