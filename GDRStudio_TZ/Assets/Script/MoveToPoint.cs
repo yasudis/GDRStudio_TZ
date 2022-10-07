@@ -8,15 +8,15 @@ public class MoveToPoint : MonoBehaviour
     public LineRenderer line;
     float moveSpeed = 10;
     Vector3[] moveToPoits;
-    private int numberOfPoint=0;
-    private int numberOfMovetoPoint = 0;
+    private int numberOfPoint=1;
+    private int numberOfMovetoPoint = 1;
     private int countsOfPoint=100;
     
 
     void Start()
     {
        moveToPoits = new Vector3[countsOfPoint];
-       line.positionCount = 0;
+       line.positionCount = 1;
        line.SetPosition(0, transform.position);
     }
 
